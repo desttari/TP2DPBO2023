@@ -11,7 +11,7 @@ Secara desain program ini menggunakan konsep Object Oriented Programming (OOP) d
 ### Diagram UML
 Diagram UML digunakan untuk merepresentasikan hubungan antar kelas dalam program ini. Diagram UML yang telah dibuat meliputi hubungan inheritance, hubungan composition, dan hubungan association antar kelas dalam program. Dengan diagram UML ini.
 
-- ![Screenshot program](screenshots/screenshot_program.png)
+- ![Screenshot program Diagram UML](Screenshots/uml.png)
 #### Detail Kelas
 Berikut adalah detail kelas yang digunakan beserta nama filenya:
 
@@ -29,7 +29,7 @@ Berikut adalah detail kelas yang digunakan beserta nama filenya:
 ### Database Diagram
 Database program ini dibangun menggunakan SQLite. Database ini menyimpan data item yang ada di dalam kulkas. Database ini dibangun menggunakan ORM (Object-Relational Mapping) dengan memanfaatkan fitur SQLite JDBC untuk memudahkan pengaksesan data. 
 
-- ![Screenshot program](screenshots/screenshot_program.png)
+- ![Screenshot Database](Screenshots/db.jpg)
 
 Program ini menggunakan dua tabel dalam database, yaitu "items" dan "users". Berikut adalah penjelasan fungsi dari masing-masing tabel:
 
@@ -43,9 +43,10 @@ Tabel "users" berfungsi sebagai tabel penyimpanan data mengenai pengguna program
 Program ini memiliki alur kerja yang sederhana. Pertama-tama, pengguna harus login menggunakan akun yang sudah terdaftar di dalam program. Setelah login, pengguna akan dibawa ke halaman utama yang menampilkan item-item yang sudah ada di dalam kulkas. Dari halaman utama, pengguna dapat menambahkan, mengedit, atau menghapus item pada kulkas.
 
 ## Batasan Program
+- File `jar` yang dijalankan harus yang di dalam folder `isikulkas_tartar`, selain itu gambar tidak akan terload.
 - Program hanya dapat dijalankan pada komputer dengan sistem operasi Windows.
 - Program memerlukan koneksi internet untuk melakukan proses login dan menyimpan data ke database.
-  - port MYSQL yang digunakan saat pembuatan adalah `3308`
+  - port MYSQL yang digunakan saat pembuatan adalah `3306`
 - Program hanya dapat digunakan oleh satu pengguna pada satu waktu. Karena hanya ada fitur `login`
   - Akses akun:
     - username: tartar
@@ -59,26 +60,28 @@ Program ini memiliki alur kerja yang sederhana. Pertama-tama, pengguna harus log
 ## Screenshots Program
 - Login
 
-![Screenshot program](screenshots/screenshot_program.png)
+![Screenshot program Login](Screenshots/login.jpg)
+![Screenshot program Login Success](Screenshots/login_suc.jpg)
 
 - Halaman Utama
 
-![Screenshot program](screenshots/screenshot_program.png)
+![Screenshot program Halaman Utama](Screenshots/main.jpg)
 
 - Halaman edit
 
-![Screenshot program](screenshots/screenshot_program.png
+![Screenshot program Halaman Edit](Screenshots/edit.jpg)
 
 - Halaman Tambah
 
-![Screenshot program](screenshots/screenshot_program.png)
+![Screenshot program Halaman Tambah](Screenshots/add1.jpg)
+![Screenshot program Halaman Tambah](Screenshots/add.jpg)
 
 ## Cara Menjalankan Program
 Untuk menggunakan dan menjalankan program, ikuti langkah-langkah berikut:
 
 1. Download satu project isikulkas_tartar
-2. Buka file jar program di folder `isikulkas_tartar` (buka yang di dalam folder dist)
-4. Pastikan terhubung ke `Localhost`, di sini digunakan MySQL port `3308`
+2. Buka file jar program di folder `isikulkas_tartar` (*bukan* yang di dalam folder dist ataupun folder JAR)
+4. Pastikan terhubung ke `Localhost`, di sini digunakan MySQL port `3306`
 3. Jalankan file jar program dengan cara double click pada file atau jalankan melalui command prompt dengan perintah "java -jar [isikulkas_tartar].jar".
 4. Program akan terbuka dan pengguna dapat melakukan login dengan akun yang telah terdaftar.
   - Akses akun:
