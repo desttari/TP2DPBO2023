@@ -1,5 +1,8 @@
 # TP2DPBO2023
 TP2 DPBO: Program Java yang terkoneksi dengan database MySQL
+## Janji
+
+Saya Destira Lestari Saraswati NIM 2100506 mengerjakan TP2 dalam mata kuliah Desain Pemrograman Berorientasi Objek untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
 
 -----------------------------------------------------------------------------------------
 ## Isi Kulkas Tartar
